@@ -1,0 +1,22 @@
+C:\Users\CARRERA PROFESIONAL\source\repos\Parking System 1.0\Parking System 1.0\bin\Debug\Parking System 1.0.exe.config
+C:\Users\CARRERA PROFESIONAL\source\repos\Parking System 1.0\Parking System 1.0\bin\Debug\Parking System 1.0.exe
+C:\Users\CARRERA PROFESIONAL\source\repos\Parking System 1.0\Parking System 1.0\bin\Debug\Parking System 1.0.pdb
+C:\Users\CARRERA PROFESIONAL\source\repos\Parking System 1.0\Parking System 1.0\obj\Debug\Parking System 1.0.csprojAssemblyReference.cache
+C:\Users\CARRERA PROFESIONAL\source\repos\Parking System 1.0\Parking System 1.0\obj\Debug\Parking_System_1._0.Form1.resources
+C:\Users\CARRERA PROFESIONAL\source\repos\Parking System 1.0\Parking System 1.0\obj\Debug\Parking_System_1._0.Properties.Resources.resources
+C:\Users\CARRERA PROFESIONAL\source\repos\Parking System 1.0\Parking System 1.0\obj\Debug\Parking System 1.0.csproj.GenerateResource.cache
+C:\Users\CARRERA PROFESIONAL\source\repos\Parking System 1.0\Parking System 1.0\obj\Debug\Parking System 1.0.csproj.CoreCompileInputs.cache
+C:\Users\CARRERA PROFESIONAL\source\repos\Parking System 1.0\Parking System 1.0\obj\Debug\Parking System 1.0.exe
+C:\Users\CARRERA PROFESIONAL\source\repos\Parking System 1.0\Parking System 1.0\obj\Debug\Parking System 1.0.pdb
+C:\Users\CARRERA PROFESIONAL\Documents\Parking System 1.0\Parking System 1.0\bin\Debug\Parking System 1.0.exe.config
+C:\Users\CARRERA PROFESIONAL\Documents\Parking System 1.0\Parking System 1.0\bin\Debug\Parking System 1.0.exe
+C:\Users\CARRERA PROFESIONAL\Documents\Parking System 1.0\Parking System 1.0\bin\Debug\Parking System 1.0.pdb
+C:\Users\CARRERA PROFESIONAL\Documents\Parking System 1.0\Parking System 1.0\obj\Debug\Parking System 1.0.csprojAssemblyReference.cache
+C:\Users\CARRERA PROFESIONAL\Documents\Parking System 1.0\Parking System 1.0\obj\Debug\Parking_System_1._0.Formularios.Inicio.resources
+C:\Users\CARRERA PROFESIONAL\Documents\Parking System 1.0\Parking System 1.0\obj\Debug\Parking_System_1._0.Formularios.Principal.resources
+C:\Users\CARRERA PROFESIONAL\Documents\Parking System 1.0\Parking System 1.0\obj\Debug\Parking_System_1._0.Formularios.RegistrarParqueo.resources
+C:\Users\CARRERA PROFESIONAL\Documents\Parking System 1.0\Parking System 1.0\obj\Debug\Parking_System_1._0.Form1.resources
+C:\Users\CARRERA PROFESIONAL\Documents\Parking System 1.0\Parking System 1.0\obj\Debug\Parking_System_1._0.Properties.Resources.resources
+C:\Users\CARRERA PROFESIONAL\Documents\Parking System 1.0\Parking System 1.0\obj\Debug\Parking System 1.0.csproj.GenerateResource.cache
+C:\Users\CARRERA PROFESIONAL\Documents\Parking System 1.0\Parking System 1.0\obj\Debug\Parking System 1.0.exe
+C:\Users\CARRERA PROFESIONAL\Documents\Parking System 1.0\Parking System 1.0\obj\Debug\Parking System 1.0.pdb
