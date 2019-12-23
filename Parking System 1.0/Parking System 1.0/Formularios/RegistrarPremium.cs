@@ -23,34 +23,34 @@ namespace Parking_System_1._0
         private void Form1_Load(object sender, EventArgs e)
         {
              myCon = new SqlConnection("Data Source=.;Initial Catalog=parking;Integrated Security=True");
-            myCon.Open();
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
            String genero= cmbgenero.Text;
             //SqlConnection con = ConexionBD.myCon;
             try {
                 SqlCommand cmd = myCon.CreateCommand();
-            cmd.CommandText = "Exec pa_registroPremium  @dni,@nombres,@apellidos,@nacimiento, @genero, @telefono, @direccion, @correo";
+            cmd.CommandText = "Exec pa_registroPremium  @dni,@nombres,@apellidos, @genero, @telefono, @direccion";
 
             cmd.Parameters.Add("@dni", SqlDbType.Int).Value = txtdni.Text;
             cmd.Parameters.Add("@nombres", SqlDbType.VarChar, 50).Value = txtnombres.Text;
             cmd.Parameters.Add("@apellidos", SqlDbType.VarChar, 80).Value = txtapellidos.Text;
-            cmd.Parameters.Add("@nacimiento", SqlDbType.DateTime).Value = txtfecha.Text;
             cmd.Parameters.Add("@genero", SqlDbType.VarChar, 20).Value = genero;
             cmd.Parameters.Add("@telefono", SqlDbType.VarChar, 15).Value = txttelefono.Text;
             cmd.Parameters.Add("@direccion", SqlDbType.VarChar, 50).Value = txtdireccion.Text;
-            cmd.Parameters.Add("@correo", SqlDbType.VarChar, 50).Value = txtemail.Text;
             myCon.Open();
             cmd.ExecuteNonQuery();
+                MessageBox.Show("Registro Exitoso !");
             myCon.Close(); 
             }
             catch(Exception err) {
-                //MessageBox.Show("error: "+ err);
+                MessageBox.Show("error: "+ err);
+                myCon.Close();
             }
-            
+        
 
         }
 
@@ -60,5 +60,7 @@ namespace Parking_System_1._0
             this.Hide();
             p.Show();
         }
+
+     
     }
 }

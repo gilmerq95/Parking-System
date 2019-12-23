@@ -34,16 +34,12 @@
             this.txtnombres = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtapellidos = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtfecha = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbgenero = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txttelefono = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtdireccion = new System.Windows.Forms.TextBox();
-            this.txtemail = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -96,26 +92,10 @@
             this.txtapellidos.Size = new System.Drawing.Size(203, 20);
             this.txtapellidos.TabIndex = 5;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(89, 172);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Fecha de Nacimiento:";
-            // 
-            // txtfecha
-            // 
-            this.txtfecha.Location = new System.Drawing.Point(206, 169);
-            this.txtfecha.Name = "txtfecha";
-            this.txtfecha.Size = new System.Drawing.Size(100, 20);
-            this.txtfecha.TabIndex = 7;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(155, 216);
+            this.label5.Location = new System.Drawing.Point(155, 176);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 13);
             this.label5.TabIndex = 8;
@@ -128,7 +108,7 @@
             "Masculino",
             "Femenino",
             "Otro"});
-            this.cmbgenero.Location = new System.Drawing.Point(206, 213);
+            this.cmbgenero.Location = new System.Drawing.Point(206, 173);
             this.cmbgenero.Name = "cmbgenero";
             this.cmbgenero.Size = new System.Drawing.Size(100, 21);
             this.cmbgenero.TabIndex = 9;
@@ -137,7 +117,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(149, 269);
+            this.label6.Location = new System.Drawing.Point(149, 229);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 13);
             this.label6.TabIndex = 10;
@@ -145,7 +125,7 @@
             // 
             // txttelefono
             // 
-            this.txttelefono.Location = new System.Drawing.Point(207, 266);
+            this.txttelefono.Location = new System.Drawing.Point(207, 226);
             this.txttelefono.Name = "txttelefono";
             this.txttelefono.Size = new System.Drawing.Size(100, 20);
             this.txttelefono.TabIndex = 11;
@@ -153,7 +133,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(145, 316);
+            this.label7.Location = new System.Drawing.Point(145, 276);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(55, 13);
             this.label7.TabIndex = 12;
@@ -161,26 +141,10 @@
             // 
             // txtdireccion
             // 
-            this.txtdireccion.Location = new System.Drawing.Point(206, 313);
+            this.txtdireccion.Location = new System.Drawing.Point(206, 273);
             this.txtdireccion.Name = "txtdireccion";
             this.txtdireccion.Size = new System.Drawing.Size(100, 20);
             this.txtdireccion.TabIndex = 13;
-            // 
-            // txtemail
-            // 
-            this.txtemail.Location = new System.Drawing.Point(206, 364);
-            this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(100, 20);
-            this.txtemail.TabIndex = 14;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(161, 367);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(39, 13);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "E-Mail:";
             // 
             // button1
             // 
@@ -209,16 +173,12 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtemail);
             this.Controls.Add(this.txtdireccion);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txttelefono);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cmbgenero);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtfecha);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtapellidos);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtnombres);
@@ -241,16 +201,12 @@
         private System.Windows.Forms.TextBox txtnombres;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtapellidos;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtfecha;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmbgenero;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txttelefono;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtdireccion;
-        private System.Windows.Forms.TextBox txtemail;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }

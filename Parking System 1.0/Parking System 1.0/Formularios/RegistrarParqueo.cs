@@ -23,5 +23,10 @@ namespace Parking_System_1._0.Formularios
             this.Hide();
             p.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
