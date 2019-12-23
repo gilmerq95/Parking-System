@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDni = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPlaca = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbPlaza = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -47,12 +47,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "DNI";
             // 
-            // textBox1
+            // txtDni
             // 
-            this.textBox1.Location = new System.Drawing.Point(181, 91);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtDni.Location = new System.Drawing.Point(181, 91);
+            this.txtDni.Name = "txtDni";
+            this.txtDni.Size = new System.Drawing.Size(100, 20);
+            this.txtDni.TabIndex = 1;
             // 
             // label2
             // 
@@ -63,12 +63,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Placa Vehículo";
             // 
-            // textBox2
+            // txtPlaca
             // 
-            this.textBox2.Location = new System.Drawing.Point(181, 160);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 3;
+            this.txtPlaca.Location = new System.Drawing.Point(181, 160);
+            this.txtPlaca.Name = "txtPlaca";
+            this.txtPlaca.Size = new System.Drawing.Size(100, 20);
+            this.txtPlaca.TabIndex = 3;
             // 
             // label3
             // 
@@ -79,17 +79,17 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Plaza";
             // 
-            // comboBox1
+            // cmbPlaza
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbPlaza.FormattingEnabled = true;
+            this.cmbPlaza.Items.AddRange(new object[] {
             "A-1",
             "B-2",
             "B-3"});
-            this.comboBox1.Location = new System.Drawing.Point(384, 89);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 5;
+            this.cmbPlaza.Location = new System.Drawing.Point(384, 89);
+            this.cmbPlaza.Name = "cmbPlaza";
+            this.cmbPlaza.Size = new System.Drawing.Size(121, 21);
+            this.cmbPlaza.TabIndex = 5;
             // 
             // button1
             // 
@@ -118,14 +118,16 @@
             this.ClientSize = new System.Drawing.Size(672, 318);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbPlaza);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtPlaca);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDni);
             this.Controls.Add(this.label1);
             this.Name = "RegistrarParqueo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistrarParqueo";
+            this.Load += new System.EventHandler(this.RegistrarParqueo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,11 +136,11 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDni;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPlaca;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbPlaza;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }

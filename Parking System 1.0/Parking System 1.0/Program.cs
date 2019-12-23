@@ -17,7 +17,7 @@ namespace Parking_System_1._0
           
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Formularios.Principal());
+            Application.Run(new Formularios.Inicio());
         }
     }
 }

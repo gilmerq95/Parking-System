@@ -21,5 +21,13 @@ namespace Parking_System_1._0.Formularios
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           Principal p = new Principal();
+            this.Hide();
+            p.Show();
+
+        }
     }
 }

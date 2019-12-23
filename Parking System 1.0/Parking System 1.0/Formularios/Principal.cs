@@ -42,7 +42,7 @@ namespace Parking_System_1._0.Formularios
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Principal p = new Principal();
+            Inicio p = new Inicio();
             this.Hide();p.Show();
         }
     }
