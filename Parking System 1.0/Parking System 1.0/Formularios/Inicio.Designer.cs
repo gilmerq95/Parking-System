@@ -52,6 +52,7 @@
             this.txtClave.PasswordChar = '*';
             this.txtClave.Size = new System.Drawing.Size(159, 23);
             this.txtClave.TabIndex = 1;
+            this.txtClave.Text = "123";
             // 
             // button1
             // 

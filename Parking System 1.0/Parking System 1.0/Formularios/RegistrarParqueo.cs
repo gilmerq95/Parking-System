@@ -28,16 +28,22 @@ namespace Parking_System_1._0.Formularios
 
         private void button1_Click(object sender, EventArgs e)
         {
+          
             try
             {
                 SqlCommand cmd = myCon.CreateCommand();
+                //SqlCommand Actualizar=myCon.CreateCommand();
+               // Actualizar.CommandText = "exec actualizar_plaza " + cmbPlaza.SelectedValue + "'";
                 cmd.CommandText = "Exec pa_registroNormal  @dni,@id_plaza,@placa";
-
+                
                 cmd.Parameters.Add("@dni", SqlDbType.Int).Value = txtDni.Text;
-                cmd.Parameters.Add("@id_plaza", SqlDbType.Int).Value = cmbPlaza.Text;
+                cmd.Parameters.Add("@id_plaza", SqlDbType.Int).Value = cmbPlaza.SelectedValue;
                 cmd.Parameters.Add("@placa", SqlDbType.VarChar, 20).Value = txtPlaca.Text;
+
+              
                 myCon.Open();
                 cmd.ExecuteNonQuery();
+               // Actualizar.ExecuteNonQuery();
                 MessageBox.Show("Registro Exitoso !");
                 myCon.Close();
             }
@@ -52,7 +58,30 @@ namespace Parking_System_1._0.Formularios
         private void RegistrarParqueo_Load(object sender, EventArgs e)
         {
             myCon = new SqlConnection("Data Source=.;Initial Catalog=parking;Integrated Security=True");
+            DataTable dt = Plazas();
+            cmbPlaza.DataSource = dt;
+            cmbPlaza.ValueMember = "id_plaza";
+            cmbPlaza.DisplayMember = "letra";
+        }
+        private DataTable Plazas()
+        {
+          
+                using (var da = new SqlDataAdapter())
+                {
+                    using (var cmd = myCon.CreateCommand())
+                    {
+                        cmd.CommandText = "SELECT id_plaza,letra FROM plaza where Estado='Disponible'";
+                        da.SelectCommand = cmd;
+                        var dt = new DataTable();
+                        da.Fill(dt);
+                        return dt;
+                    }
+                }
+            
+        }
 
+        private void cmbPlaza_SelectedIndexChanged(object sender, EventArgs e)
+        {
         }
     }
 }

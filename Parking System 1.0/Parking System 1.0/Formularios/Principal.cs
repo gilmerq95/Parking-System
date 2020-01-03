@@ -20,6 +20,7 @@ namespace Parking_System_1._0.Formularios
         private void button1_Click(object sender, EventArgs e)
         {
             RegistrarParqueo rp = new RegistrarParqueo();
+            this.Hide();
             rp.Show();
             
         }
@@ -31,7 +32,7 @@ namespace Parking_System_1._0.Formularios
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Form1 rp = new Form1();
+            Form1 rp = new Form1(); this.Hide();
             rp.Show();
         }
 

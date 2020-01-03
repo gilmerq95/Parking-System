@@ -32,3 +32,4 @@ C:\Users\CARRERA PROFESIONAL\Source\Repos\gilmerq95\Parking-System\Parking Syste
 C:\Users\CARRERA PROFESIONAL\Source\Repos\gilmerq95\Parking-System\Parking System 1.0\Parking System 1.0\obj\Debug\Parking System 1.0.csproj.GenerateResource.cache
 C:\Users\CARRERA PROFESIONAL\Source\Repos\gilmerq95\Parking-System\Parking System 1.0\Parking System 1.0\obj\Debug\Parking System 1.0.exe
 C:\Users\CARRERA PROFESIONAL\Source\Repos\gilmerq95\Parking-System\Parking System 1.0\Parking System 1.0\obj\Debug\Parking System 1.0.pdb
+C:\Users\CARRERA PROFESIONAL\Source\Repos\gilmerq95\Parking-System\Parking System 1.0\Parking System 1.0\obj\Debug\Parking_System_1._0.Formularios.InformacionPremium.resources

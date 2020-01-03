@@ -90,6 +90,7 @@
             this.cmbPlaza.Name = "cmbPlaza";
             this.cmbPlaza.Size = new System.Drawing.Size(121, 21);
             this.cmbPlaza.TabIndex = 5;
+            this.cmbPlaza.SelectedIndexChanged += new System.EventHandler(this.cmbPlaza_SelectedIndexChanged);
             // 
             // button1
             // 
