@@ -32,20 +32,17 @@ namespace Parking_System_1._0.Formularios
             try
             {
                 SqlCommand cmd = myCon.CreateCommand();
-                //SqlCommand Actualizar=myCon.CreateCommand();
-               // Actualizar.CommandText = "exec actualizar_plaza " + cmbPlaza.SelectedValue + "'";
                 cmd.CommandText = "Exec pa_registroNormal  @dni,@id_plaza,@placa";
                 
                 cmd.Parameters.Add("@dni", SqlDbType.Int).Value = txtDni.Text;
                 cmd.Parameters.Add("@id_plaza", SqlDbType.Int).Value = cmbPlaza.SelectedValue;
                 cmd.Parameters.Add("@placa", SqlDbType.VarChar, 20).Value = txtPlaca.Text;
 
-              
                 myCon.Open();
                 cmd.ExecuteNonQuery();
-               // Actualizar.ExecuteNonQuery();
                 MessageBox.Show("Registro Exitoso !");
                 myCon.Close();
+                txtDni.Text = "";txtPlaca.Text = "";
             }
             catch (Exception err)
             {
