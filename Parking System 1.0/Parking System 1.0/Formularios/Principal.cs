@@ -27,7 +27,7 @@ namespace Parking_System_1._0.Formularios
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            PagoParqueo p = new PagoParqueo();this.Hide();p.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
