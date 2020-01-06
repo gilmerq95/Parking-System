@@ -78,6 +78,12 @@
     <Compile Include="Formularios\Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\PagoParqueo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PagoParqueo.Designer.cs">
+      <DependentUpon>PagoParqueo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PagoParqueo.resx">
+      <DependentUpon>PagoParqueo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>

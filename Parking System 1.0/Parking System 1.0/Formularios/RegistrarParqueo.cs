@@ -32,11 +32,12 @@ namespace Parking_System_1._0.Formularios
             try
             {
                 SqlCommand cmd = myCon.CreateCommand();
-                cmd.CommandText = "Exec pa_registroNormal  @dni,@id_plaza,@placa";
+                cmd.CommandText = "Exec pa_registroNormal  @dni,@id_plaza,@placa,@hora";
                 
                 cmd.Parameters.Add("@dni", SqlDbType.Int).Value = txtDni.Text;
                 cmd.Parameters.Add("@id_plaza", SqlDbType.Int).Value = cmbPlaza.SelectedValue;
                 cmd.Parameters.Add("@placa", SqlDbType.VarChar, 20).Value = txtPlaca.Text;
+                cmd.Parameters.Add("@hora", SqlDbType.VarChar, 20).Value = DateTime.Now.ToString("HH:mm");
 
                 myCon.Open();
                 cmd.ExecuteNonQuery();

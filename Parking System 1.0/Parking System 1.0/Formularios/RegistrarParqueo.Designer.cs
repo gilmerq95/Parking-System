@@ -127,7 +127,7 @@
             this.Controls.Add(this.label1);
             this.Name = "RegistrarParqueo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RegistrarParqueo";
+            this.Text = "REGISTRAR NUEVO PARQUEO";
             this.Load += new System.EventHandler(this.RegistrarParqueo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
