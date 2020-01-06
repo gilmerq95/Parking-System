@@ -47,15 +47,15 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(96, 48);
+            this.label1.Location = new System.Drawing.Point(135, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.Size = new System.Drawing.Size(21, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "DNI:";
+            this.label1.Text = "ID:";
             // 
             // txtDni
             // 
-            this.txtDni.Location = new System.Drawing.Point(131, 45);
+            this.txtDni.Location = new System.Drawing.Point(170, 46);
             this.txtDni.Name = "txtDni";
             this.txtDni.Size = new System.Drawing.Size(100, 20);
             this.txtDni.TabIndex = 1;
@@ -68,6 +68,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
