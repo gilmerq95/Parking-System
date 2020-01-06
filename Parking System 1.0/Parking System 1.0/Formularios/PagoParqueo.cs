@@ -32,6 +32,7 @@ namespace Parking_System_1._0.Formularios
 
         private void button1_Click(object sender, EventArgs e)
         {
+            txtTiempo.Text = "";txtTotal.Text = "";txtHoraSalida.Text = "";
             int id =  Convert.ToInt32(txtDni.Text);
 
             try
@@ -70,9 +71,6 @@ namespace Parking_System_1._0.Formularios
             txtTotal.Text = (horas*4).ToString("N2"); 
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }

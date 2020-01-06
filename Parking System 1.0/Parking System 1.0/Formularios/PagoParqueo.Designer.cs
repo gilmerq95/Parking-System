@@ -58,7 +58,7 @@
             // txtDni
             // 
             this.txtDni.Location = new System.Drawing.Point(170, 46);
-            this.txtDni.MaxLength = 1;
+            this.txtDni.MaxLength = 10;
             this.txtDni.Name = "txtDni";
             this.txtDni.Size = new System.Drawing.Size(100, 20);
             this.txtDni.TabIndex = 10;
@@ -192,7 +192,6 @@
             this.label6.Size = new System.Drawing.Size(68, 13);
             this.label6.TabIndex = 14;
             this.label6.Text = "Tiempo total:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // PagoParqueo
             // 
