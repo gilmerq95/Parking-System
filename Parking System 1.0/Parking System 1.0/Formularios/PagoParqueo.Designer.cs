@@ -42,7 +42,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
+            this.txtTiempo = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -57,9 +58,10 @@
             // txtDni
             // 
             this.txtDni.Location = new System.Drawing.Point(170, 46);
+            this.txtDni.MaxLength = 1;
             this.txtDni.Name = "txtDni";
             this.txtDni.Size = new System.Drawing.Size(100, 20);
-            this.txtDni.TabIndex = 1;
+            this.txtDni.TabIndex = 10;
             // 
             // button1
             // 
@@ -92,17 +94,19 @@
             // txtPlaza
             // 
             this.txtPlaza.Enabled = false;
+            this.txtPlaza.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPlaza.Location = new System.Drawing.Point(170, 103);
             this.txtPlaza.Name = "txtPlaza";
-            this.txtPlaza.Size = new System.Drawing.Size(31, 20);
+            this.txtPlaza.Size = new System.Drawing.Size(31, 21);
             this.txtPlaza.TabIndex = 5;
             // 
             // txtHoraEntrada
             // 
             this.txtHoraEntrada.Enabled = false;
+            this.txtHoraEntrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoraEntrada.Location = new System.Drawing.Point(170, 132);
             this.txtHoraEntrada.Name = "txtHoraEntrada";
-            this.txtHoraEntrada.Size = new System.Drawing.Size(61, 20);
+            this.txtHoraEntrada.Size = new System.Drawing.Size(71, 21);
             this.txtHoraEntrada.TabIndex = 6;
             // 
             // button2
@@ -118,9 +122,10 @@
             // txtHoraSalida
             // 
             this.txtHoraSalida.Enabled = false;
+            this.txtHoraSalida.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoraSalida.Location = new System.Drawing.Point(170, 158);
             this.txtHoraSalida.Name = "txtHoraSalida";
-            this.txtHoraSalida.Size = new System.Drawing.Size(61, 20);
+            this.txtHoraSalida.Size = new System.Drawing.Size(71, 21);
             this.txtHoraSalida.TabIndex = 9;
             // 
             // label4
@@ -135,16 +140,17 @@
             // txtTotal
             // 
             this.txtTotal.Enabled = false;
-            this.txtTotal.Location = new System.Drawing.Point(170, 184);
+            this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotal.Location = new System.Drawing.Point(170, 209);
             this.txtTotal.MaxLength = 4;
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(61, 20);
+            this.txtTotal.Size = new System.Drawing.Size(49, 21);
             this.txtTotal.TabIndex = 11;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(101, 187);
+            this.label5.Location = new System.Drawing.Point(101, 212);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 13);
             this.label5.TabIndex = 10;
@@ -152,7 +158,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(203, 248);
+            this.button3.Location = new System.Drawing.Point(205, 265);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(108, 32);
             this.button3.TabIndex = 12;
@@ -169,21 +175,32 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // label7
+            // txtTiempo
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(170, 211);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "label7";
+            this.txtTiempo.Enabled = false;
+            this.txtTiempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTiempo.Location = new System.Drawing.Point(170, 184);
+            this.txtTiempo.Name = "txtTiempo";
+            this.txtTiempo.Size = new System.Drawing.Size(49, 21);
+            this.txtTiempo.TabIndex = 15;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(96, 187);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Tiempo total:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // PagoParqueo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(504, 330);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtTiempo);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.txtTotal);
@@ -223,6 +240,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtTiempo;
+        private System.Windows.Forms.Label label6;
     }
 }

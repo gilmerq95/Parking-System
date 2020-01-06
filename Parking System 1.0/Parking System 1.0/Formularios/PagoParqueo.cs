@@ -66,8 +66,13 @@ namespace Parking_System_1._0.Formularios
             DateTime horaEntrada = Convert.ToDateTime(txtHoraEntrada.Text); 
             DateTime horaSalida = Convert.ToDateTime(txtHoraSalida.Text);
             double horas = horaSalida.Subtract(horaEntrada).TotalHours;
-            txtTotal.Text =Convert.ToString(horas);
-            label7.Text = Convert.ToString(horas * 4);
+            txtTiempo.Text =(horas).ToString("N2");
+            txtTotal.Text = (horas*4).ToString("N2"); 
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
