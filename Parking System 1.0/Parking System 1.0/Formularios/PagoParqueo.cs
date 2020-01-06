@@ -59,5 +59,15 @@ namespace Parking_System_1._0.Formularios
             }
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            txtHoraSalida.Text= DateTime.Now.ToString("HH:mm:ss");
+            DateTime horaEntrada = Convert.ToDateTime(txtHoraEntrada.Text); 
+            DateTime horaSalida = Convert.ToDateTime(txtHoraSalida.Text);
+            double horas = horaSalida.Subtract(horaEntrada).TotalHours;
+            txtTotal.Text =Convert.ToString(horas);
+            label7.Text = Convert.ToString(horas * 4);
+        }
     }
 }
