@@ -55,7 +55,7 @@ namespace Parking_System_1._0.Formularios
             }
             catch (Exception err)
             {
-                MessageBox.Show("Error: " + err);
+                MessageBox.Show("Error:asfafeafeafaefafeaefafefeafea " + err);
                 myCon.Close();
             }
 
